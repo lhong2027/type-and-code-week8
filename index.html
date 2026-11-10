@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="animals">
+            <div id="cat">MEOW</div>
+            <div id="dog">WOOF</div>
+            <div id="chick">CHIRP</div>
+        </div>
+        <div class="buttons">
+            <button id="catbutton">Click Me</button>
+            <button id="dogbutton">Click Me</button>
+            <button id="chickbutton">Click Me</button>
+        </div>
+
+        <script>
+            function changeCat() {
+                cat.innerHTML = 'MEOWWWWWWWWWW';
+                cat.style.color = 'pink';
+                cat.style.fontSize = 50 + 'px';
+                cat.style.fontFamily = 'cursive';
+            }
+            catbutton.addEventListener('click', changeCat);
+
+            function changeDog() {
+                dog.innerHTML = 'WOOFFFFFFFFFF';
+                dog.style.color = 'lightblue';
+                dog.style.fontSize = 50 + 'px';
+                dog.style.fontFamily = 'sans-serif';
+            }
+            dogbutton.addEventListener('click', changeDog);
+
+            function changeChick() {
+                chick.innerHTML = 'CHIRPPPPP';
+                chick.style.color = 'yellow';
+                chick.style.fontSize = 50 + 'px';
+                chick.style.fontFamily = 'serif';
+            }
+            chickbutton.addEventListener('click', changeChick);
+        </script>
+    </body>
+</html>
